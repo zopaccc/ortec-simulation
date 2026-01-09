@@ -175,28 +175,7 @@
                  <li>Le message crée-t-il un sentiment d’urgence inhabituel ?</li>
                 </ul>
             </div>
-
-            <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
-                <button class="return-btn" onclick="handleReturn()">
-                    J’ai compris – Retour
-                </button>
-            </div>
-
         </div>
     </div>
-    <script>
-        function handleReturn() {
-            // Essayer de fermer la fenêtre (fonctionne si ouverte par window.open())
-            if (!window.close()) {
-                // Si close() échoue, utiliser history.back() ou rediriger
-                if (history.length > 1) {
-                    history.back();
-                } else {
-                    // Rediriger vers une page de départ si pas d'historique
-                    window.location.href = 'about:blank';
-                }
-            }
-        }
-    </script>
 </body>
 </html>
